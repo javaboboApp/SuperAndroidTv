@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.example.simpleandroidtv"
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+def leanback_version = "1.0.0"
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation "androidx.leanback:leanback:$leanback_version"
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    // leanback-preference is an add-on that provides a settings UI for TV apps.
+    implementation "androidx.leanback:leanback-preference:$leanback_version"
+
+    // leanback-paging is an add-on that simplifies adding paging support to a RecyclerView Adapter.
+    implementation "androidx.leanback:leanback-paging:1.1.0-alpha04"
+
+    // leanback-tab is an add-on that provides customized TabLayout to be used as the top navigation bar.
+    implementation "androidx.leanback:leanback-tab:1.1.0-alpha04"
+
+
+}
