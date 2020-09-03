@@ -9,9 +9,9 @@ import androidx.leanback.widget.HeaderItem
 import androidx.leanback.widget.ListRow
 import androidx.leanback.widget.ListRowPresenter
 import com.example.simpleandroidtv.R
-import com.example.simpleandroidtv.ui.models.PhotoItem
-import com.example.simpleandroidtv.ui.utils.Constants.NUM_ROWS
-import com.example.simpleandroidtv.ui.utils.Constants.TITLE_BROWSER
+import com.example.simpleandroidtv.models.PhotoItem
+import com.example.simpleandroidtv.utils.Constants.NUM_ROWS
+import com.example.simpleandroidtv.utils.Constants.TITLE_BROWSER
 
 
 class BrowserFragment : BrowseSupportFragment() {

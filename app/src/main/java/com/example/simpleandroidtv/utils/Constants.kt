@@ -1,4 +1,4 @@
-package com.example.simpleandroidtv.ui.utils
+package com.example.simpleandroidtv.utils
 
 object Constants {
 

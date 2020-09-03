@@ -1,11 +1,9 @@
 package com.example.simpleandroidtv.ui.browser
 
-import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.util.Log
 import android.view.View
-import android.view.View.MeasureSpec
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
@@ -14,8 +12,7 @@ import androidx.leanback.widget.Presenter
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.ViewTarget
 import com.example.simpleandroidtv.R
-import com.example.simpleandroidtv.ui.models.PhotoItem
-import com.example.simpleandroidtv.ui.utils.Constants.IMAGE_HEIGHT_DP
+import com.example.simpleandroidtv.models.PhotoItem
 
 
 private const val TAG = "CardPresenter"

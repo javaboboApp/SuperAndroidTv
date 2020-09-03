@@ -1,4 +1,4 @@
-package com.example.simpleandroidtv.ui.models
+package com.example.simpleandroidtv.models
 
 import android.graphics.drawable.Drawable
 
