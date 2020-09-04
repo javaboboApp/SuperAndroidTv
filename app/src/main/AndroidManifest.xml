@@ -4,22 +4,25 @@
 
     <uses-feature
         android:name="android.software.leanback"
-        android:required="false" />
+        android:required="true" />
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
 
     <application
         android:allowBackup="true"
+        android:banner="@mipmap/ic_launcher"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:banner="@mipmap/ic_launcher">
-        <activity android:name=".ui.home.HomeActivity">
+        android:theme="@style/Theme.Leanback">
+        <activity android:name=".ui.browser.PhotoDetailsActivity"></activity>
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Leanback.Browse">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
